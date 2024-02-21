@@ -1,0 +1,74 @@
+@prefix rr: <http://www.w3.org/ns/r2rml#>.
+@prefix rml: <http://semweb.mmlab.be/ns/rml#>.
+@prefix ql: <http://semweb.mmlab.be/ns/ql#>.
+@prefix mo: <http://purl.org/ontology/mo/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix dbpedia-owl: <http://dbpedia.org/>.
+@prefix rml-io: <https://kg-construct.github.io/rml-io/ontology/documentation/index-en.html#http://w3id.org/>.
+@base <http://example.com/ns#>.
+<#ArtistMapping> a rr:TriplesMap;
+  rml:logicalSource [
+    rml:source "artist.json" ;
+    rml:referenceFormulation ql:JSONPath;
+    rml:iterator "$.artists[*]";
+  ];
+  rr:subjectMap [
+    rr:template "https://open.spotify.com/intl-it/artist/{artistID}";
+    rr:class mo:MusicArtist
+  ];
+  rr:predicateObjectMap [
+    rr:predicate foaf:name;
+    rr:objectMap [
+      rml:reference "name";
+      rr:datatype xsd:string
+      ]
+    ];
+  rr:predicateObjectMap [
+    rr:predicate dbpedia-owl:MusicGenre;
+    rr:objectMap [
+      rml:reference "genre";
+      rr:datatype xsd:string
+      ]
+    ];
+  rr:predicateObjectMap [
+    rr:predicate dbpedia-owl:Country;
+    rr:objectMap [
+      rml:reference "country";
+      rr:datatype xsd:string
+      ]
+    ];
+  rr:predicateObjectMap [
+    rr:predicate rml-io:Target;
+    rr:objectMap [
+      rml:reference "target_age";
+      rr:datatype xsd:integer
+      ]
+    ].
+<#MusicMapping> a rr:TriplesMap;
+  rml:logicalSource [
+    rml:source "tracks.csv" ;
+    rml:referenceFormulation ql:CSV;
+  ];
+  rr:subjectMap [
+    rr:template "https://open.spotify.com/intl-it/track/{trackID}";
+    rr:class mo:Track
+  ];
+  rr:predicateObjectMap [
+    rr:predicate rdfs:label;
+    rr:objectMap [
+      rml:reference "track_name";
+      rr:datatype xsd:string
+      ]
+    ];
+  rr:predicateObjectMap [
+    rr:predicate mo:MusicArtist;
+    rr:objectMap [
+      rr:parentTriplesMap <#ArtistMapping>;
+      rr:joinCondition [
+        rr:child "artistID";
+        rr:parent "artistID";
+      ];
+    ];
+  ].

@@ -1,0 +1,144 @@
+{
+    "artists": [
+        {
+            "artistID": "06HL4z0CvFAxyc27GXpf02",
+            "name": "Taylor Swift",
+            "genre": "pop",
+            "country": "United States",
+            "target_age": 30
+        },
+        {
+            "artistID": "3WrFJ7ztbogyGnTHbHJFl2",
+            "name": "The Beatles",
+            "genre": "rock",
+            "country": "United Kindom",
+            "target_age": 50
+        },
+        {
+            "artistID": "1dfeR4HaWDbWqFHLkxsg1d",
+            "name": "Queen",
+            "genre": "rock",
+            "country": "United Kindom",
+            "target_age": 40
+        },
+        {
+            "artistID": "1Xyo4u8uXC1ZmMpatF05PJ",
+            "name": "The Weeknd",
+            "genre": "pop",
+            "country": "Canada",
+            "target_age": 18
+        },
+        {
+            "artistID": "3TVXtAsR1Inumwj472S9r4",
+            "name": "Drake",
+            "genre": "rap",
+            "country": "Canada",
+            "target_age": 18
+        },
+        {
+            "artistID": "0C8ZW7ezQVs4URX5aX7Kqx",
+            "name": "Selena Gomez",
+            "genre": "pop",
+            "country": "United States",
+            "target_age": 30
+        },
+        {
+            "artistID": "66CXWjxzNUsdJxJ2JdwvnR",
+            "name": "Ariana Grande",
+            "genre": "pop",
+            "country": "United States",
+            "target_age": 18
+        },
+        {
+            "artistID": "7dGJo4pcD2V6oG8kP0tJRR",
+            "name": "Eminem",
+            "genre": "rap",
+            "country": "United States",
+            "target_age": 20
+        },
+        {
+            "artistID": "4gzpq5DPGxSnKTe4SA8HAU",
+            "name": "Coldplay",
+            "genre": "rock",
+            "country": "United Kindom",
+            "target_age": 30
+        },
+        {
+            "artistID": "0k17h0D3J5VfsdmQ1iZtE9",
+            "name": "Pink Floyd",
+            "genre": "rock",
+            "country": "United Kindom",
+            "target_age": 60
+        },
+        {
+            "artistID": "0EqkKYDK9EkKY5N7zU3FPv",
+            "name": "Annalisa",
+            "genre": "pop",
+            "country": "Italy",
+            "target_age": 20
+        },
+        {
+            "artistID": "53XhwfbYqKCa1cC15pYq2q",
+            "name": "Imagine Dragons",
+            "genre": "pop",
+            "country": "United States",
+            "target_age": 30
+        },
+        {
+            "artistID": "7GgpsUpkj3olseoaTY7TEY",
+            "name": "Elodie",
+            "genre": "pop",
+            "country": "Italy",
+            "target_age": 20
+        },
+        {
+            "artistID": "23TFHmajVfBtlRx5MXqgoz",
+            "name": "Sfera Ebbasta",
+            "genre": "rap",
+            "country": "Italy",
+            "target_age": 18
+        },
+        {
+            "artistID": "0lAWpj5szCSwM4rUMHYmrr",
+            "name": "Maneskin",
+            "genre": "rock",
+            "country": "Italy",
+            "target_age": 20
+        },
+        {
+            "artistID": "5pKCCKE2ajJHZ9KAiaK11H",
+            "name": "Rihanna",
+            "genre": "pop",
+            "country": "United States",
+            "target_age": 30
+        },
+        {
+            "artistID": "22bE4uQ6baNwSHPVcDxLCe",
+            "name": "The Rolling Stones",
+            "genre": "rock",
+            "country": "United Kindom",
+            "target_age": 50
+        },
+        {
+            "artistID": "43ZHCT0cAZBISjO8DG9PnE",
+            "name": "Elvis Presley",
+            "genre": "rock",
+            "country": "United States",
+            "target_age": 60
+        },
+        {
+            "artistID": "22WZ7M8sxp5THdruNY3gXt",
+            "name": "The Doors",
+            "genre": "rock",
+            "country": "United States",
+            "target_age": 60
+        },
+        {
+            "artistID": "3fMbdgg4jU18AjLCKBhRSm",
+            "name": "Michael Jackson",
+            "genre": "pop",
+            "country": "United States",
+            "target_age": 30
+        }
+    ]
+}
